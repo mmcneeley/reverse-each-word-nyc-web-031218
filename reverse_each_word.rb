@@ -1,8 +1,12 @@
+sentence = "the lazy dog"
+
 def reverse_each_word(sentence)
-  def reverse(sentence_array)
-    sentence_array.collect do |word|
+  #def reverse(sentence_array)
+    sentence.collect do |word|
       word.reverse
-    end
-  end
-  reverse(sentence.split).join(" ")
+    end.join(" ")
+  #end
+  #reverse(sentence.split).join(" ")
 end
+
+puts reverse_each_word(sentence)
